@@ -1,3 +1,5 @@
+# Importing pandas and exploratory analysis
+
 import pandas as pd 
 
 
@@ -13,6 +15,18 @@ print(df.columns)
 
 print(df.head())
 
-import pandas as pd
 
+# Task 2: Select only the columns needed for first staging practice.
 
+selected_columns = [
+    "spotify_id",
+    "name",
+    "artists",
+    "daily_rank",
+    "country",
+    "snapshot_date"
+]
+
+df_selected = df[selected_columns]
+
+print(df_selected.head())
