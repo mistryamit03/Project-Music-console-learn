@@ -37,3 +37,11 @@ print(df_selected.head())
 
 print(df_selected.isna().sum())
 print(df_selected.info())
+
+
+# Task 4: Create a clean working DataFrame before cleaning: Creating a safe working copy before modifying selected data.
+
+df_clean = df_selected.copy()
+
+
+print(df_clean.head())
