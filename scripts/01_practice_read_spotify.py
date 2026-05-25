@@ -30,3 +30,10 @@ selected_columns = [
 df_selected = df[selected_columns]
 
 print(df_selected.head())
+
+
+# Task 3: Inspect selected columns for missing values and data types: Basic data profiling before cleaning.
+
+
+print(df_selected.isna().sum())
+print(df_selected.info())
